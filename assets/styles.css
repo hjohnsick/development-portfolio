@@ -1,0 +1,73 @@
+:root {
+    --pink: #ffc1cc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Navigation */
+header {
+    font-family: 'Playfair Display', serif;
+    padding: 20px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: var(--pink);
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 30px;
+    margin: 0;
+}
+
+#portfolio {
+    font-size: 24px;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+}
+
+/* Content */
+.content {
+    text-align: center;
+}
+
+.content h2 {
+    border-bottom: 3px solid var(--pink);
+}
+
+#about img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+#projects img {
+    width: 100px;
+}
+
+p {
+    font-family: 'Comfortaa', cursive;
+}
+
