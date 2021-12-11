@@ -1,4 +1,7 @@
 # Heather Johnsick's Developer Portfolio
+As I continue to learn and create more projects, this portfolio will grow.  I plan on making this porfolio more modern and stylish as I expand my knowledge.
+![Developer Portfolio](./assets/images/Portfolio.PNG)
+
 ### Languages Used
 HTML/CSS
 ### What I learned
