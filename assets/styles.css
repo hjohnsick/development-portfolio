@@ -1,7 +1,7 @@
 :root {
     --pink: #ffc1cc;
     --white: #ffffff;
-    --teal: #367588;
+    --teal: #5BDCCF;
 }
 
 * {
@@ -11,50 +11,12 @@
     font-family: 'Playfair Display', serif;
 }
 
-/* Navigation */
-header {
-    font-family: 'Playfair Display', serif;
-    padding: 20px 35px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    background-color: var(--teal);
-    color: var(--white);
-}
-
-header h1 {
-    font-weight: bold;
-    font-size: 30px;
-    margin: 0;
+.navbar-item {
+    color: var(--teal);
 }
 
 #portfolio {
     font-size: 24px;
-}
-
-header a {
-    text-decoration: none;
-    color: var(--white);
-}
-
-header a:hover {
-    color: var(--pink);
-    font-weight: bold;
-}
-
-header nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-}
-
-header nav ul li a {
-    padding: 10px 15px;
 }
 
 /* Content */
@@ -97,35 +59,22 @@ p {
     line-height: 1.6;
 }
 
+.img {
+    height: 200px;
+}
+
 /* Projects Section */
 #projects h2 {
     text-align: center;
 }
 
-.project-cards {
-    flex: 4;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.card-equal-height, .card-content {
+    flex-grow: 1;
 }
 
-.card {
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 10px;
-}
-
-.card h3 {
+.card-footer-item {
     background-color: var(--teal);
-    color: var(--white);
-    padding: 15px;
-}
-
-.card img {
-    width: 100%;
-    height: 70%;
+    color: var(--white)
 }
 
 /* Contact section */
@@ -133,6 +82,8 @@ p {
     text-align: center;
     padding-bottom: 20px;
     padding-top: 20px;
+    padding-top: 40px;
+    margin-top: 40px;
 }
 
 #contact a {
@@ -145,36 +96,3 @@ p {
     margin-top: 20px;
 }
 
-/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
-@media screen and (max-width: 992px){
-    #profile-pic {
-        margin-bottom: 25px;
-    }
-
-    .right-container {
-        flex: 0 100%;
-    }
-}
-
-@media screen and (max-width: 768px){
-    #profile-pic {
-        margin-bottom: 25px;
-
-    }
-
-    .right-container {
-        flex: 0 100%;
-    }
-
-}
-
-@media screen and (max-width: 576px){
-    #profile-pic {
-        margin-bottom: 25px;
-        height: 200px;
-    }
-
-    .right-container {
-        flex: 0 100%;
-    }
-}

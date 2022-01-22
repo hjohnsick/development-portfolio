@@ -1,71 +1,194 @@
 <!DOCTYPE html>
 <html lang="en-us">
-    <head>
-        <meta charset="UTF-8"/>
-        <link rel="stylesheet" href="./assets/styles.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Playfair+Display&display=swap" rel="stylesheet">
-        <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
-        <title>Heather Johnsick's Portfolio</title>
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <script
+      src="https://platform.linkedin.com/badges/js/profile.js"
+      async
+      defer
+      type="text/javascript"
+    ></script>
+    <title>Heather Johnsick's Portfolio</title>
+  </head>
+  <!--navigation-->
+  <nav
+    class="navbar is-fixed-top is-danger"
+    role="navigation"
+    aria-label="main navigation"
+  >
+    <div class="navbar-brand">
+      <a class="navbar-item">
+        <h1>
+          Heather Johnsick's <span id="portfolio">Development Portfolio</span>
+        </h1>
+      </a>
 
-    <body>
-        <!--navigation-->
-        <header>
-            <h1>Heather Johnsick's <span id="portfolio">Development Portfolio</span></h1>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#about">About</a>
-                    </li>
-                    <li>
-                        <a href="#projects">Projects</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+      <a
+        role="button"
+        class="navbar-burger"
+        aria-label="menu"
+        aria-expanded="false"
+        data-target="navbarBasicExample"
+      >
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
 
-        <div class="content">
-            <section id="about">
-                        <img id="profile-pic" src="./assets/images/profile-pic.JPG" alt="Heather's face">
-              <div class="right-container">
-                    <h2>About</h2>
-                    <p>My name is Heather Johnsick.  I am a former retail manager turned software engineer.  
-                        I completed an intense 3 month coding bootcamp through Grand Circus in Detroit, MI, where I learned the fundamentals of C#, ASP.NET, and MySQL.  I am currently employed as a software engineer at Rocket Mortage.  
-                        I work primarily in C#, but have some experience in Typescript, and Nest.js.  I am currently enrolled in coding bootcamp through MSU where I am learning HTML, CSS, and JavaScript.
-                        In my spare time, I enjoy traveling, hiking, and kayaking.</p>
-              </div>
-            </section>
-            <section id="projects">
-                <h2>Projects</h2>
-                <div class="project-cards">
-                    <div class="card">
-                        <h3>Run Buddy</h3>
-                        <a href="https://hjohnsick.github.io/run-buddy/" target="_blank"><img src="./assets/images/run-buddy.jpg" alt="Run-buddy website"></a>
-                        <p>HTML/CSS</p>
-                    </div>
-                    <div class="card">
-                        <h3>Coming Soon</h3>
-                        <img src="./assets/images/coming-soon.jpg" alt="Coming soon banner"></a>
-                        <p>HTML/CSS/JavaScript</p>
-                    </div>
-                    <div class="card">
-                        <h3>Coming Soon</h3>
-                        <img src="./assets/images/coming-soon.jpg" alt="Coming soon banner"></a>
-                        <p>HTML/CSS/JavaScript</p>
-                    </div>
-                </div>
-            </section>
-            <section id="contact">
-                <h2>Contact</h2>
-                <a href="mailto:hjohnsick@yahoo.com" target="_blank"><img src="./assets/images/email-removebg-preview.png" alt="Email Icon"></a>
-                <a href="https://github.com/hjohnsick" target="_blank"><img src="./assets/images/github-removebg-preview.png" alt="Github Icon"></a>
-                <a href="https://www.linkedin.com/in/heather-johnsick/" target="_blank"><img src="./assets/images/linkedIn-removebg-preview.png" alt="LinkedIn Icon"></a>
-            </section>
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start"></div>
+
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <a class="navbar-item" href="#about"> About </a>
+          <a class="navbar-item" href="#projects"> Projects </a>
+          <a class="navbar-item" href="#contact"> Contact </a>
         </div>
-    </body>
+      </div>
+    </div>
+  </nav>
+  <body class="has-navbar-fixed-top">
+    <div class="content">
+      <section id="about">
+        <img
+          id="profile-pic"
+          src="./assets/images/profile-pic.JPG"
+          alt="Heather's face"
+        />
+        <div class="right-container">
+          <h2>About</h2>
+          <p>
+            My name is Heather Johnsick. I am a former retail manager turned
+            software engineer. I completed an intense 3 month coding bootcamp
+            through Grand Circus in Detroit, MI, where I learned the
+            fundamentals of C#, ASP.NET, and MySQL. I am currently employed as a
+            software engineer at Rocket Mortage. I work primarily in C#, but
+            have some experience in Typescript, and Nest.js. I am currently
+            enrolled in coding bootcamp through MSU where I am learning HTML,
+            CSS, and JavaScript. In my spare time, I enjoy traveling, hiking,
+            and kayaking.
+          </p>
+        </div>
+      </section>
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-container">
+          <div
+            id="project-column"
+            class="columns mt-5 is-8 is-variable is-centered is-multiline"
+          >
+            <div class="column is-6-tablet is-5-desktop is-4-widescreen">
+              <div class="card">
+                <div class="card-content has-text-centered">
+                  <p class="title is-size-5">Run-buddy</p>
+                </div>
+                <div class="card-image has-text-centered px-6">
+                  <a
+                    href="https://hjohnsick.github.io/run-buddy/"
+                    target="_blank"
+                  >
+                    <img
+                      src="./assets/images/run-buddy.jpg"
+                      alt="Run-buddy website"
+                      class="img"
+                    />
+                  </a>
+                </div>
+                <footer class="card-footer">
+                  <p class="card-footer-item">HTML/CSS</p>
+                </footer>
+              </div>
+            </div>
+            <div class="column is-6-tablet is-5-desktop is-4-widescreen">
+              <div class="card card-equal-height">
+                <div class="card-content has-text-centered">
+                  <p class="title is-size-5">Weather Dashboard</p>
+                </div>
+                <div class="card-image has-text-centered px-6">
+                  <a
+                    href="https://hjohnsick.github.io/Weather-Dashboard/"
+                    target="_blank"
+                  >
+                    <img
+                      src="./assets/images/weather-dashboard.PNG"
+                      alt="Weather Dashboard website"
+                      class="img"
+                    />
+                  </a>
+                </div>
+                <footer class="card-footer">
+                  <p class="card-footer-item">JavaScript/Jquery/HTML/CSS</p>
+                </footer>
+              </div>
+            </div>
+            <div class="column is-6-tablet is-5-desktop is-4-widescreen">
+                <div class="card">
+                  <div class="card-content has-text-centered">
+                    <p class="title is-size-5">What's For Dinner?</p>
+                  </div>
+                  <div class="card-image has-text-centered px-6">
+                    <a
+                      href="https://stahljohnmark.github.io/whatsfordinner/"
+                      target="_blank"
+                    >
+                      <img
+                        src="./assets/images/whats-for-dinner.png"
+                        alt="What's for dinner website"
+                        class="img"
+                      />
+                    </a>
+                  </div>
+                  <footer class="card-footer">
+                    <p class="card-footer-item">JavaScript/JQuery/Bulma/HTML/CSS</p>
+                  </footer>
+                </div>
+              </div>
+              <div class="column is-6-tablet is-5-desktop is-4-widescreen">
+                <div class="card">
+                  <div class="card-content has-text-centered">
+                    <p class="title is-size-5">Coming Soon</p>
+                  </div>
+                  <div class="card-image has-text-centered px-6">
+                    <img src="./assets/images/coming-soon.jpg" alt="Coming soon banner"></a>
+                  </div>
+                  <footer class="card-footer">
+                    <p class="card-footer-item">Node Js</p>
+                  </footer>
+                </div>
+              </div>
+            
+          </div>
+      </section>
+      <section id="contact">
+        <h2>Contact</h2>
+        <a href="mailto:hjohnsick@yahoo.com" target="_blank"
+          ><img
+            src="./assets/images/email-removebg-preview.png"
+            alt="Email Icon"
+        /></a>
+        <a href="https://github.com/hjohnsick" target="_blank"
+          ><img
+            src="./assets/images/github-removebg-preview.png"
+            alt="Github Icon"
+        /></a>
+        <a href="https://www.linkedin.com/in/heather-johnsick/" target="_blank"
+          ><img
+            src="./assets/images/linkedIn-removebg-preview.png"
+            alt="LinkedIn Icon"
+        /></a>
+      </section>
+    </div>
+  </body>
 </html>
