@@ -2,18 +2,55 @@
 <html lang="en-us">
     <head>
         <meta charset="UTF-8"/>
-        <link rel="stylesheet" href="./assets/styles.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Playfair+Display&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./assets/styles.css">
         <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
         <title>Heather Johnsick's Portfolio</title>
     </head>
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation" >
+        <div class="navbar-brand">
+          <a class="navbar-item">
+            <h1>Heather Johnsick's <span id="portfolio">Development Portfolio</span></h1>
+          </a>
+      
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+      
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+            
 
-    <body>
+            </div>
+         
+      
+          <div class="navbar-end">
+            <div class="navbar-item">
+                <a class="navbar-item" href="#about">
+                    About
+                </a>
+          
+                <a class="navbar-item" href="#projects">
+                    Projects
+                </a>
+                <a class="navbar-item" href="#contact">
+                    Contact
+                </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    <body class="has-navbar-fixed-top">
         <!--navigation-->
         <header>
-            <h1>Heather Johnsick's <span id="portfolio">Development Portfolio</span></h1>
+           
+            <!-- <h1>Heather Johnsick's <span id="portfolio">Development Portfolio</span></h1>
             <nav>
                 <ul>
                     <li>
@@ -26,7 +63,7 @@
                         <a href="#contact">Contact</a>
                     </li>
                 </ul>
-            </nav>
+            </nav> -->
         </header>
 
         <div class="content">
@@ -49,14 +86,14 @@
                         <p>HTML/CSS</p>
                     </div>
                     <div class="card">
-                        <h3>Coming Soon</h3>
-                        <img src="./assets/images/coming-soon.jpg" alt="Coming soon banner"></a>
-                        <p>HTML/CSS/JavaScript</p>
+                        <h3>Weather Dashboard</h3>
+                        <a href="https://hjohnsick.github.io/Weather-Dashboard/" target="_blank"><img src="./assets/images/weather-dashboard.PNG" alt="Weather-Dashboard website"></a>
+                        <p>HTML/CSS/JavaScript/JQuery</p>
                     </div>
                     <div class="card">
-                        <h3>Coming Soon</h3>
-                        <img src="./assets/images/coming-soon.jpg" alt="Coming soon banner"></a>
-                        <p>HTML/CSS/JavaScript</p>
+                        <h3>What's For Dinner?</h3>
+                        <a href="https://stahljohnmark.github.io/whatsfordinner/" target="_blank"><img src="./assets/images/whats-for-dinner.png" alt="Whats for dinner website"></a>
+                        <p>HTML/CSS/JavaScript/JQuery/Bulma</p>
                     </div>
                 </div>
             </section>
