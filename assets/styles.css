@@ -55,36 +55,18 @@ p {
     line-height: 1.6;
 }
 
+.img {
+    height: 200px;
+}
+
 /* Projects Section */
 #projects h2 {
     text-align: center;
 }
 
-/* .project-cards {
-    flex: 4;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.card-equal-height, .card-content {
+    flex-grow: 1;
 }
-
-.card {
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 10px;
-}
-
-.card h3 {
-    background-color: var(--teal);
-    color: var(--white);
-    padding: 15px;
-}
-
-.card img {
-    width: 100%;
-    height: 70%;
-} */
 
 /* Contact section */
 #contact {
@@ -103,36 +85,3 @@ p {
     margin-top: 20px;
 }
 
-/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
-@media screen and (max-width: 992px){
-    #profile-pic {
-        margin-bottom: 25px;
-    }
-
-    .right-container {
-        flex: 0 100%;
-    }
-}
-
-@media screen and (max-width: 768px){
-    #profile-pic {
-        margin-bottom: 25px;
-
-    }
-
-    .right-container {
-        flex: 0 100%;
-    }
-
-}
-
-@media screen and (max-width: 576px){
-    #profile-pic {
-        margin-bottom: 25px;
-        height: 200px;
-    }
-
-    .right-container {
-        flex: 0 100%;
-    }
-}
