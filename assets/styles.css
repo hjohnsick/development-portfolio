@@ -1,7 +1,7 @@
 :root {
     --pink: #ffc1cc;
     --white: #ffffff;
-    --teal: #367588;
+    --teal: #5BDCCF;
 }
 
 * {
@@ -9,6 +9,10 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Playfair Display', serif;
+}
+
+.navbar-item {
+    color: var(--teal);
 }
 
 #portfolio {
@@ -68,11 +72,18 @@ p {
     flex-grow: 1;
 }
 
+.card-footer-item {
+    background-color: var(--teal);
+    color: var(--white)
+}
+
 /* Contact section */
 #contact {
     text-align: center;
     padding-bottom: 20px;
     padding-top: 20px;
+    padding-top: 40px;
+    margin-top: 40px;
 }
 
 #contact a {
