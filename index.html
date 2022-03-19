@@ -6,12 +6,9 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Playfair+Display&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ewert&family=Maiden+Orange&family=Rye&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/styles.css" />
     <script
       src="https://platform.linkedin.com/badges/js/profile.js"
@@ -23,7 +20,7 @@
   </head>
   <!--navigation-->
   <nav
-    class="navbar is-fixed-top is-danger"
+    class="navbar is-fixed-top"
     role="navigation"
     aria-label="main navigation"
   >
@@ -61,28 +58,23 @@
   </nav>
   <body class="has-navbar-fixed-top">
     <div class="content">
-      <section id="about">
-        <img
-          id="profile-pic"
-          src="./assets/images/profile-pic.JPG"
-          alt="Heather's face"
-        />
-        <div class="right-container">
-          <h2>About</h2>
-          <p>
-            My name is Heather Johnsick. I am a former retail manager turned
-            software engineer. I completed an intense 3 month coding bootcamp
-            through Grand Circus in Detroit, MI, where I learned the
+      <div class="hero-image">
+        <div class="hero-text pt-6 pl-6">
+          <h1 class="is-size-1">Hello,  <br> my name is <br> Heather Johnsick</h1>
+          <h2 class="is-size-2">And I am a Software Engineer</h2>
+          <p class="is-size-4">
+            I completed an intense 3 month coding bootcamp
+            through Grand Circus in Detroit, MI, where I learned the <br>
             fundamentals of C#, ASP.NET, and MySQL. I am currently employed as a
-            software engineer at Rocket Mortage. I work primarily in C#, but
-            have some experience in Typescript, and Nest.js. I am currently
+            software engineer at Rocket Mortage. <br> I work primarily in C#, but
+            have some experience in Typescript, and Nest.js. <br>I am currently
             enrolled in coding bootcamp through MSU where I am learning HTML,
-            CSS, and JavaScript. In my spare time, I enjoy traveling, hiking,
+            CSS, and JavaScript. <br>In my spare time, I enjoy traveling, hiking,
             and kayaking.
           </p>
         </div>
-      </section>
-      <section id="projects">
+      </div>
+      <section id="projects" class="pt-6">
         <h2>Projects</h2>
         <div class="project-container">
           <div
@@ -107,7 +99,7 @@
                   </a>
                 </div>
                 <footer class="card-footer">
-                  <p class="card-footer-item">HTML/CSS</p>
+                  <p class="card-footer-item is-size-5">HTML/CSS</p>
                 </footer>
               </div>
             </div>
@@ -129,7 +121,7 @@
                   </a>
                 </div>
                 <footer class="card-footer">
-                  <p class="card-footer-item">JavaScript/Jquery/HTML/CSS</p>
+                  <p class="card-footer-item is-size-5">JavaScript/Jquery/HTML/CSS</p>
                 </footer>
               </div>
             </div>
@@ -151,20 +143,22 @@
                     </a>
                   </div>
                   <footer class="card-footer">
-                    <p class="card-footer-item">JavaScript/JQuery/Bulma/HTML/CSS</p>
+                    <p class="card-footer-item is-size-5">JavaScript/JQuery/Bulma/HTML/CSS</p>
                   </footer>
                 </div>
               </div>
               <div class="column is-6-tablet is-5-desktop is-4-widescreen">
                 <div class="card">
                   <div class="card-content has-text-centered">
-                    <p class="title is-size-5">Coming Soon</p>
+                    <p class="title is-size-5">The Guest List</p>
                   </div>
                   <div class="card-image has-text-centered px-6">
-                    <img src="./assets/images/coming-soon.jpg" alt="Coming soon banner"></a>
+                    <a href="https://hidden-spire-39352.herokuapp.com/">
+                      <img src="./assets/images/guest-list.png" alt="The Guest List homepage" class="img"/>
+                    </a>
                   </div>
                   <footer class="card-footer">
-                    <p class="card-footer-item">Node Js</p>
+                    <p class="card-footer-item is-size-5">Node Js/Sequelize/MySql/Express/Javascript/Handlebars</p>
                   </footer>
                 </div>
               </div>
